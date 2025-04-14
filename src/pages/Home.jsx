@@ -1,11 +1,11 @@
 
 import React from 'react';
-import Layout from '../components/layout/Layout';
-import Hero from '../components/home/Hero';
-import ServiceCategories from '../components/home/ServiceCategories';
-import Testimonials from '../components/home/Testimonials';
-import AboutSection from '../components/home/AboutSection';
-import ContactSection from '../components/home/ContactSection';
+import Layout from '../components/layout/Layout.jsx';
+import Hero from '../components/home/Hero.jsx';
+import ServiceCategories from '../components/home/ServiceCategories.jsx';
+import Testimonials from '../components/home/Testimonials.jsx';
+import AboutSection from '../components/home/AboutSection.jsx';
+import ContactSection from '../components/home/ContactSection.jsx';
 
 const Home = () => {
   return (

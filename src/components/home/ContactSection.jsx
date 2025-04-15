@@ -26,7 +26,7 @@ const ContactSection = () => {
               href="tel:+15551234567" 
               className="mt-3 inline-block text-primary font-medium hover:underline"
             >
-              +1 (555) 123-4567
+              +91 9163620567
             </a>
           </div>
 
@@ -52,14 +52,14 @@ const ContactSection = () => {
             </div>
             <h3 className="mt-4 text-lg font-medium text-gray-900">Business Hours</h3>
             <p className="mt-2 text-base text-gray-500">
-              Monday - Friday: 9am - 6pm EST<br />
-              Saturday: 10am - 2pm EST<br />
+              Monday - Friday: 9am - 6pm IST<br />
+              Saturday: 10am - 2pm IST<br />
               Sunday: Closed
             </p>
           </div>
         </div>
 
-        <div className="mt-12 max-w-lg mx-auto">
+        {/* <div className="mt-12 max-w-lg mx-auto">
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-lg font-medium text-gray-900">Send us a message</h3>
             <form className="mt-6 space-y-4">
@@ -103,7 +103,7 @@ const ContactSection = () => {
               </div>
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

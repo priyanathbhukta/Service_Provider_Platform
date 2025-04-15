@@ -9,8 +9,8 @@ const OrderCard = ({ order, onViewDetails, onUpdateStatus }) => {
         return 'bg-yellow-100 text-yellow-800';
       case 'completed':
         return 'bg-green-100 text-green-800';
-      case 'cancelled':
-        return 'bg-red-100 text-red-800';
+      // case 'cancelled':
+      //   return 'bg-red-100 text-red-800';
       case 'in-progress':
         return 'bg-blue-100 text-blue-800';
       default:
@@ -72,22 +72,24 @@ const OrderCard = ({ order, onViewDetails, onUpdateStatus }) => {
           </button>
         </div>
         
-        {order.status === 'pending' && (
+         {order.status === 'pending' && (
           <div className="mt-4 flex space-x-3">
             <button
               onClick={() => onUpdateStatus(order.id, 'in-progress')}
               className="flex-1 bg-primary text-white px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
             >
-              Accept
+              Start Serving
             </button>
-            <button
+          </div>
+         )}
+            {/*<button
               onClick={() => onUpdateStatus(order.id, 'cancelled')}
               className="flex-1 bg-white text-gray-700 px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
             >
               Decline
             </button>
           </div>
-        )}
+        )} */}
         
         {order.status === 'in-progress' && (
           <div className="mt-4">

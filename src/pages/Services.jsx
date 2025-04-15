@@ -75,6 +75,7 @@ const Services = () => {
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
+  //const [addingService, setAddingService] = useState(true);
   const [editingService, setEditingService] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [category, setCategory] = useState('');

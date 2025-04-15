@@ -55,9 +55,9 @@ const Navbar = () => {
           
           {/* User Profile and Notifications */}
           <div className="hidden md:flex md:items-center">
-            <button className="p-2 rounded-full text-gray-500 hover:text-primary hover:bg-gray-100 transition-colors">
+            {/* <button className="p-2 rounded-full text-gray-500 hover:text-primary hover:bg-gray-100 transition-colors">
               <Bell size={20} />
-            </button>
+            </button> */}
             
             <div className="relative ml-3">
               <div>
@@ -65,7 +65,7 @@ const Navbar = () => {
                   onClick={toggleProfileMenu}
                   className="flex items-center space-x-2 bg-white p-1 rounded-full text-gray-700 hover:text-primary focus:outline-none"
                 >
-                  <span className="font-medium text-sm hidden sm:block">John's Spa</span>
+                  <span className="font-medium text-sm hidden sm:block">Khusi Parlour</span>
                   <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">
                     <User size={16} />
                   </div>
@@ -137,7 +137,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="ml-3">
-                <div className="text-base font-medium text-gray-800">John's Spa</div>
+                <div className="text-base font-medium text-gray-800">Khusi Parlour</div>
                 <div className="text-sm font-medium text-gray-500">john@example.com</div>
               </div>
               <button className="ml-auto p-2 rounded-full text-gray-500 hover:text-primary hover:bg-gray-100">

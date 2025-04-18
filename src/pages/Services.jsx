@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Layout from '../components/layout/Layout';
 import ServiceCard from '../components/services/ServiceCard';
@@ -41,12 +40,12 @@ const initialServices = [
   },
   {
     id: 4,
-    name: 'Economy Car Rental',
-    description: 'Affordable daily car rental for your travel needs.',
+    name: 'Bridal Makeup',
+    description: 'Unveil your most radiant self with the best bridal makeup artistry — where elegance meets perfection.',
     price: 49.99,
-    duration: 'per day',
-    category: 'Car Rental',
-    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
+    duration: '3 hours',
+    category: 'Beauty & Wellness',
+    image: 'assets/images/bridal-makeup.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
     availability: true
   },
   {
@@ -94,7 +93,16 @@ const Services = () => {
   }, []);
 
   const handleAddService = () => {
-    setEditingService(null);
+    setEditingService({
+      id: null,
+      name: '',
+      description: '',
+      price: '',
+      duration: '',
+      category: '',
+      image: '',
+      availability: true
+    });
     setShowForm(true);
   };
 
@@ -112,7 +120,7 @@ const Services = () => {
   };
 
   const handleFormSubmit = (serviceData) => {
-    if (editingService) {
+    if (editingService && editingService.id) {
       // Update existing service
       setServices(services.map(service => 
         service.id === serviceData.id ? serviceData : service
@@ -120,7 +128,11 @@ const Services = () => {
       toast.success('Service updated successfully');
     } else {
       // Add new service
-      setServices([...services, serviceData]);
+      const newService = {
+        ...serviceData,
+        id: services.length + 1 // Generate a new ID based on the current length
+      };
+      setServices([...services, newService]);
       toast.success('Service added successfully');
     }
     setShowForm(false);

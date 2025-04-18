@@ -14,7 +14,7 @@ const ServiceForm = ({ service = {}, onSubmit, onCancel }) => {
   });
 
   useEffect(() => {
-    if (service.id) {
+    if (service.id) { // changeable to service.id for adding service button 
       setFormData({
         id: service.id,
         name: service.name || '',

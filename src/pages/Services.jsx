@@ -50,21 +50,22 @@ const initialServices = [
   },
   {
     id: 5,
-    name: 'Math Tutoring',
-    description: 'One-on-one math tutoring for students of all levels.',
+    name: 'Tanning Session',
+    description: 'Achieve a sun-kissed glow with our professional tanning service.',
     price: 30.00,
     duration: '1 hour',
-    category: 'Tuition',
+    category: 'Beauty & Wellness',
     image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
     availability: true
   },
   {
     id: 6,
-    name: 'Home Cleaning',
-    description: 'Comprehensive home cleaning service.',
+    name: 'Body Polish',
+
+    description: 'Exfoliating body treatment to smooth and hydrate your skin.',
     price: 80.00,
     duration: '3 hours',
-    category: 'Housekeeping',
+    category: 'Beauty & Wellness',
     image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
     availability: true
   }
